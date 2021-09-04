@@ -8,3 +8,11 @@ int main()
     game.Start();
 }
 
+/// TODO:
+/// Start -> newGame
+/// create game.Update member func
+/// input
+/// generation playable sudoku
+/// main menu
+/// difficulty level
+/// 
