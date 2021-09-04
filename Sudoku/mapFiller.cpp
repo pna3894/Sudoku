@@ -25,6 +25,7 @@ void fillHorizontals(string* map)
 void fillCells(string* map, vector<vector<bool>> isHidden, vector<vector<int>> cells)
 {
 	for (int r = 1; r < 12; r++)
+	{
 		for (int c = 1; c < 12; c++)
 			if (r % 4 && c % 4)
 			{
@@ -36,6 +37,7 @@ void fillCells(string* map, vector<vector<bool>> isHidden, vector<vector<int>> c
 				else
 					map[r][c] = cells[rIdx][cIdx] + '0';
 			}
+	}
 }
 
 void fillMap(string* map, vector<vector<bool>> isHidden, vector<vector<int>> cells)

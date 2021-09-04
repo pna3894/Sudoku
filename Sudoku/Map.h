@@ -16,8 +16,14 @@ public:
 	~Map();
 
 	void Draw();
-	void ShowInfo();
 	bool IsSolvable();
+	vector<int> get_row(int n);
+	void set_row(int n, vector<int> row);
+	void swapRows(int a, int b);
+	void swapCols(int a, int b);
+	void swapHorReg(int a, int b);
+	void swapVertReg(int a, int b);
+	void transpose();
 
 private:
 	const int height = 9;
