@@ -9,8 +9,8 @@ Map::Map()
 		cells[i].resize(width);
 		isHidden[i].resize(width);
 	}
-		
-
+	
+	assignDefaultCells(cells);
 }
 
 Map::~Map()
@@ -20,8 +20,20 @@ Map::~Map()
 
 void Map::Draw()
 {
-	string rawMap[13];
+	string map[13];
 
-	fillMap(rawMap, isHidden, cells);
+	
+	fillMap(map, isHidden, cells);
+	
+
+	for (int i = 0; i < 13; i++)
+		cout << map[i] << endl;
+}
+
+void Map::assignDefaultCells(vector<vector<int>> &cells)
+{
+	for (int i = 0; i < 9; i++)
+		for (int j = 0; j < 9; j++)
+			cells[i][j] = (j + 3 * (i+1) + i/3) % 9 + 1;
 }
 

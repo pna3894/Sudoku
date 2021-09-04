@@ -2,6 +2,8 @@
 #ifndef GAME_H
 #define GAME_H
 
+#include "Map.h"
+
 class Game
 {
 public:
@@ -11,7 +13,7 @@ public:
 	void Start();
 
 private:
-	Map *map;
+	Map* map;
 };
 
 #endif

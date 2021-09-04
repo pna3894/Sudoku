@@ -4,6 +4,7 @@
 
 #include <string>
 #include <vector>
+#include <iostream>
 #include "mapFiller.h"
 
 using namespace std;
@@ -23,6 +24,8 @@ private:
 	const int width = 9;
 	vector<vector<bool>> isHidden;
 	vector<vector<int>> cells;
+
+	void assignDefaultCells(vector<vector<int>> &cells);
 };
 
 #endif // !MAP_H
