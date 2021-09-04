@@ -11,4 +11,7 @@ Game::~Game()
 	delete map;
 }
 
-Game::Start()
+void Game::Start()
+{
+
+}
